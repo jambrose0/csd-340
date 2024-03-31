@@ -1,44 +1,47 @@
-body, html {
-    font-size: 16px;
-}
 h1 {
-    font-weight: 700;
     text-align: center;
-    text-transform: uppercase;
 }
-h2 {
+h3 {
     font-weight: 500;
-    text-align: left;
-    padding-top: 15px;
 }
-p {
-    font-weight: 400;
-    line-height: 1.4em;
+ol {
+    padding: 10px;
+    list-style-position: inside;
 }
+ul {
+    padding: 10px;
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+.lists {
+    font-weight: 300;
+}
+#left_div {
+    border-style: solid;    
+}
+#right_div {
+    border-style: dashed;    
+    
+}
+#left_div, #right_div {
+    float: left;
+    width: 45%;;
+    border-width: 1px;
+    border-color:  red;
+    border-radius: 15px;
+}
+#spacer {
+    width: 100%;
+    margin-top: 60%;
 
-address {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.25em;
-    color: #4F3674;
+}
+#redirect {
+    float: right;
+    margin-bottom: 20px;
 }
 a {
     text-decoration: none;
-    
 }
-.links:hover{
-    color: blue;
+a:hover {
     text-decoration: underline;
-    font-size: 20px;
-    background-color: #D6A800;
-}
-.links:visited {
-    color: gray;
-    text-decoration: wavy;
-} 
-.sentence {
-    font-style: italic;
-}
-.intro {
-    text-indent: 2em;
 }
