@@ -1,0 +1,46 @@
+h1, h3 {
+    text-align: center;
+}
+
+#image-gallery {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.gallery-item {
+    border: 1px solid;
+    border-color: rgba(91, 192, 235, 0.8);
+}
+
+figure {
+    text-align: center;
+    padding: 10px;
+}
+figcaption {
+    font: italic;
+    font-size: .75em;
+    color: rgba(52, 64, 58);
+    padding-top: 5%;
+}
+/* red, green, blue, alpha */
+h1 {
+    color: rgba(40, 82, 56);
+}
+h3 {
+    color: rgba(86, 32, 61, 0.6);
+}
+#spacer {
+    width: 100%;
+    margin-top: 20%;
+
+}
+#redirect {
+    float: right;
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
