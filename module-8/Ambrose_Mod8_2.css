@@ -66,6 +66,7 @@ h1 {
     transition: 0.3s;
     width: 50%;
     color: var(--letters);
+    margin-bottom: 10%;
 }
 .card-title {
     text-align: center;
@@ -88,7 +89,8 @@ h1 {
 }
 footer {
     background-color: var(--primary);
-    position: absolute;
+    position: fixed;
+    left: 0;
     bottom: 0;
     width: 100%;
     font-weight: 400;
