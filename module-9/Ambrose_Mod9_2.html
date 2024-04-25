@@ -1,6 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        body {
+
+            font-family:"Goudy Bookletter 1911", sans-serif;
+        }
+        h2,h3, p {
+            text-align: center;
+            margin: 30px;
+        }
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            padding: 10px;
+            line-height: 1.5;
+        }
+        .buttons {
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+
+        }
+        button {
+            margin: 5px;
+            width: 8%;
+            background-color: #1A535C;
+            color: #f7fff7;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #f7fff7;
+            color: #1A535C;
+        }
+        footer {
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            margin-top: 10%;
+        }
+        
+    </style>
     <meta name="Description" content="Module 2 Assignment" />
     <meta name="keywords" content="Bellevue, Bellevue University, Class, Assignment, Software" />
     <meta name="robots" content="nofollow" />
@@ -12,19 +53,47 @@
 <body>
     <div id="container">
         <h1>Assignment 9.3: JavaScript - Part 1</h1>
-        <h2>Short Biography</h2>
-        <!-- TODO: -->
-        <!-- WRITE 3 PARAGRAPHS -->
-        <!-- CREATE JS FILE -->
-        <!-- PLACE 4 <SPAN> TAGS IN THE PARAGRAPHS -->
-        <!-- 4 JS VARIABLES THAT HOLD STRING INPUTS -->
-        <!-- CREATE A BUTTON FOR THE SPAN TAGS -->
+        <h2>Do Not Go Gentle Into the Night</h2>
+        <h3><a style="text-decoration: none; color:#1A535C;" href="https://poets.org/poet/dylan-thomas" target="_blank">By Dylan Thomas</a></h3>
+        <p>Do not go gentle into that good night,
+        <strong><span id="stanza1">________________________________________</span></strong>
+        Rage, rage against the dying of the light.
+        </p>
+       <p><strong><span id="stanza2">________________________________________</span></strong>
+        Because their words had forked no lightning they
+        Do not go gentle into that good night.
+        </p>
+       <p>Good men, the last wave by, crying how bright
+        <strong><span id="stanza3">________________________________________</span></strong>
+        Rage, rage against the dying of the light.
+        </p>
+       <p><strong><span id="stanza4">________________________________________</span></strong>
+        And learn, too late, they grieved it on its way,
+        Do not go gentle into that good night.
+        </p>
+       <p><strong> <span id="stanza5">________________________________________</span></strong>
+        Blind eyes could blaze like meteors and be gay,   
+        Rage, rage against the dying of the light.
+        </p>
+       <p>And you, my father, there on the sad height,
+        <strong><span id="stanza6">________________________________________</span></strong>
+        Do not go gentle into that good night.
+        Rage, rage against the dying of the light.
+        </p>
         <hr />
-        <address>
-            <a class="links" href="https://www.bellevue.edu/">Bellevue University</a> <br>
-            1000 Galvin Road South  <br>
-            Bellevue Nebraska 68005 <br>
-        </address>
+        <div class="buttons">
+
+            <button type="button" onclick="change1()">Stanza 1</button>
+            <button type="button" onclick="change2()">Stanza 2</button>
+            <button type="button" onclick="change3()">Stanza 3</button>
+            <button type="button" onclick="change4()">Stanza 4</button>
+            <button type="button" onclick="change5()">Stanza 5</button>
+            <button type="button" onclick="change6()">Stanza 6</button>
+        </div>
+        <footer> 
+            <a style="float: right;" href="https://jambrose0.github.io/csd-340/" target="_blank" rel="noopener noreferrer">Landing Page Repo</a>
+            <a style="float: left;" href="https://github.com/jambrose0/csd-340" target="_blank" rel="noopener noreferrer">Module 9 Github Repo</a>
+        </footer>
     </div>
 </body>
 
