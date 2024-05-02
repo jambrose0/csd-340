@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .pictures img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            padding: 20px;
+        }
+    </style>
+    <meta name="Description" content="Module 2 Assignment" />
+    <meta name="keywords" content="Bellevue, Bellevue University, Class, Assignment, Software" />
+    <meta name="robots" content="nofollow" />
+    <meta http-equiv="author" content="Jacob Ambrose" />
+
+    <title>CSD 340 Development with HTML and CSS</title>
+</head>
+<body>
+    <script>
+        function startCave() {
+            document.getElementById("cave").src = "./images/cave_01.jpg";
+        }
+        function newCave() {
+            document.getElementById("cave").src = "./images/cave_02.jpg";
+        }
+        function caveClick() {
+            var cave = document.getElementById("cave").src = "./images/moon_01.jpg";
+
+        }
+        function startMoon() {
+            document.getElementById("moon").src = "./images/moon_01.jpg";
+        }
+        function newMoon() {
+            document.getElementById("moon").src = "./images/moon_02.jpg";
+        }
+        function moonClick() {
+            var cave = document.getElementById("moon").src = "./images/cave_01.jpg";
+
+        }
+    </script>
+    <div id="container">
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+        <div class="pictures">
+            <img onclick="caveClick()" onmouseover="newCave()" onmouseout="startCave()" id="cave" src="./images/cave_01.jpg" alt="cave and stalactites">
+            <br>
+            <img id="moon" onmouseover="newMoon()" onmouseout="startMoon()" onclick="moonClick()" src="./images/moon_01.jpg" alt="waning moon">
+        </div>
+        <h3 style= "margin-top: 5%;">Hover your mouse over the images, and click to take change things up!</h3>
+
+        
+        </div>
+        <footer style="margin-top: 10%;"> 
+            <a style="float: right;" href="https://jambrose0.github.io/csd-340/" target="_blank" rel="noopener noreferrer">Landing Page Repo</a>
+            <a style="float: left;" href="https://github.com/jambrose0/csd-340" target="_blank" rel="noopener noreferrer">Module 10 Github Repo</a>
+        </footer>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
