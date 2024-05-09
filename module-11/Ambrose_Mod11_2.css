@@ -1,0 +1,45 @@
+.to-do-list {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+#btn-row {
+    align-items: center;
+    margin: 20px;
+}
+#btn-row button {
+    width: 110px;
+    margin: 10px;
+
+}
+.list-item {
+    align-items: center;
+    border: 1px solid green;
+    text-align: center;
+    padding: 20px;          
+}
+#tasks {
+    width: 350px;
+    text-align: center;
+}
+.list-item h2 {
+    text-align: center;
+    border-bottom: 1.5px solid gray;
+}
+#agenda li {
+    list-style-position: inside;
+    list-style-type: decimal;
+}
+
+
+footer {
+    bottom: 0;
+    position: absolute;
+}
+
+#landing {
+    float: right;
+}
+#repo {
+    float: left;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        
+        
+    </style>
+    <meta name="Description" content="Module 2 Assignment" />
+    <meta name="keywords" content="Bellevue, Bellevue University, Class, Assignment, Software" />
+    <meta name="robots" content="nofollow" />
+    <meta http-equiv="author" content="Jacob Ambrose" />
+    <link rel="stylesheet" href="Ambrose_Mod11_2.css">
+    <script src="Ambrose_Mod11_2.js"></script>
+    <title>CSD 340 Development with HTML and CSS</title>
+</head>
+<body>
+    <div id="container">
+        
+        <h1>Assignment 11.2: JavaScript - Part 3</h1>
+        <div class="instructions">
+           <h2>To-Do List</h2>
+            <p>Welcome to the to-do list maker. Type in the item you would like to add to the to-do list and click "Add"</p>
+            <p>To see the tasks left on the agenda click the "DISPLAY" button</p>
+            <p>To remove an item from the list click the "DELETE" Button</p>
+       </div>
+            <div class="to-do-list">
+                <div class="list-item">
+                    <input name="tasks[]" type="text" id="tasks" placeholder="Please enter your next task">
+                    <div id="btn-row">
+                        <button id="add-btn" onclick="addTask()">ADD</button>
+                        <button onclick="deleteTask()">DELETE</button>
+                    <button onclick="showTask()">DISPLAY LIST</button>
+                </div>
+                </div>
+                <div class="list-item">
+                    <h2>AGENDA:</h2>
+                    <ul id="agenda">
+                    </ul>
+                </div>
+            </div>
+
+            
+
+
+
+        <footer> 
+            <a id="landing" style="float: right;" href="https://jambrose0.github.io/csd-340/" target="_blank" rel="noopener noreferrer">Landing Page Repo</a>
+            <br>
+            <a id="repo" style="float: left;" href="https://github.com/jambrose0/csd-340" target="_blank" rel="noopener noreferrer">Module 9 Github Repo</a>
+        </footer>
+    </div>
+</body>
+
+
+
+
+
+
+
+
+
+
+</html>
