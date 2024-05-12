@@ -8,6 +8,10 @@ ol {
     padding: 10px;
     list-style-position: inside;
     align-items: center;
+    line-height: 2;
+}
+hr {
+    width: 20%;
 }
 #bookshelf {
     text-align: center;
