@@ -4,7 +4,6 @@ function addTask() {
     var task = document.getElementById("tasks");
     taskList.push(task.value);
     alert("Task: " + task.value + " added to list at index of: " + taskList.indexOf(task.value));
-    
 }
 
 function showTask() {
@@ -22,7 +21,4 @@ function showTask() {
 function deleteTask() {
     var list = document.getElementById("agenda");
     list.removeChild(list.lastElementChild);
-    
-
-
 }

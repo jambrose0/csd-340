@@ -1,0 +1,55 @@
+h1 {
+    text-align: left;
+}
+h3 {
+    font-weight: 500;
+}
+ol {
+    padding: 10px;
+    list-style-position: inside;
+    align-items: center;
+}
+#bookshelf {
+    text-align: center;
+    margin: 50px;
+    border: 3px solid lightskyblue;
+    border-radius: 50px;
+}
+.btn-row {
+    text-align: center;
+    margin: 25px;
+    padding: 5px;
+
+}
+#top-btn {
+    margin-right: 15px;
+}
+#spacer {
+    width: 100%;
+    margin-top: 60%;
+
+}
+#redirect {
+    float: right;
+    margin-bottom: 20px;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    background-color: cadetblue;
+    width: 100%;
+}
+
+#landing {
+    float: right;
+}
+#repo {
+    float: left;
+}

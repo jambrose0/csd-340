@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="Description" content="Module 3.3 Assignment" />
+    <meta http-equiv="author" content="Jacob Ambrose" />
+    <link rel="stylesheet" href="./Ambrose_Mod12_2.css">
+    <script src="./Ambrose_Mod12_12.js"></script>
+    <title>CSD 340 Development with HTML and CSS</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        <div>
+            <div id="bookshelf">
+                <h3>Top 10 Favorite Books</h3>
+                
+                <ol id="book-list" class="lists"> 
+                </ol>
+                <div class="btn-row">
+                    <button onclick="sortUp()" id="top-btn">Sort A-Z</button>
+                    <button onclick="sortDown()">Sort Z-A</button>
+                </div>
+            </div>
+         
+        </div>
+        <div id="spacer"></div>
+        <footer> 
+            <a id="landing" href="https://jambrose0.github.io/csd-340/" target="_blank" rel="noopener noreferrer">Landing Page Repo</a>
+            <br>
+            <a id="repo" href="https://github.com/jambrose0/csd-340" target="_blank" rel="noopener noreferrer">Module 9 Github Repo</a>
+        </footer>
+
+    </div>
+</body>
+
+<script>
+
+    var bookList = [
+    'Oathbringer by Brandon Sanderson',
+    'The Blade Itself by Joe Abercrombie',
+    'Lord of the Rings by JRR Tolkien',
+    'Wool by Hugh Howey',
+    'The Expanse by James S.A. Corey',
+    'Scythe by Neal Shusterman',
+    'Salem\'s Lot by Stephen King',
+    'The Gunslinger by Stephen King',
+    'Mercy by John Gwynne',
+    'Senlin Ascends by Josiah Bancroft'
+];
+var list = document.getElementById("book-list");
+
+for(i=0; i< bookList.length; i++) {
+    console.log(bookList[i]);
+    var book = document.createElement("li");
+    book.innerText = bookList[i];
+    list.appendChild(book);  
+}
+
+function sortUp() {
+    while(list.hasChildNodes()) {
+        list.removeChild(list.firstChild);
+    }
+    bookList.sort();
+    console.log("Ascending button clicked");
+    for(i=0; i< bookList.length; i++) {
+        console.log(bookList[i]);
+        var book = document.createElement("li");
+        book.innerText = bookList[i];
+        list.appendChild(book); 
+    }
+    
+}
+
+function sortDown() {
+    while(list.hasChildNodes()) {
+        list.removeChild(list.firstChild);
+    }
+    bookList.sort().reverse();
+    console.log("DESCENDING button clicked");
+    for(i=0; i< bookList.length; i++) {
+        console.log(bookList[i]);
+        var book = document.createElement("li");
+        book.innerText = bookList[i];
+        list.appendChild(book); 
+    }
+}
+
+</script>
+
+
+
+
+
+
+
+
+</html>
